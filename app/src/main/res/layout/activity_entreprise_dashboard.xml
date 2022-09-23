@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserDashboard"
+    android:background="@color/purple_500"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/r1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="70dp"
+        android:text="Bonjour"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="19dp"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/buildings"
+        />
+
+    <LinearLayout
+        android:layout_width="428dp"
+        android:layout_height="497dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trois utilisateurs acceptent votre offre"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vous avez deux messages "
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recommandation"
+            android:textColor="@color/black"
+            android:textFontWeight="5"
+            />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:minWidth="400dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/horizontalScrollLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="180dp"
+                    android:background="@drawable/roundedcomponent"
+                    android:orientation="vertical"
+                    android:layout_marginStart="25dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/user"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="10dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Renovation salle de bain"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:textColor="@color/white"
+                                android:textSize="20dp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Renovation complet salle de bain"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="5dp"
+                                android:textColor="@color/white"
+                                />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="10dp">
+
+                                <Button
+                                    android:id="@+id/detail"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="50dp"
+                                    android:text="Details"
+                                    android:textSize="10dp"
+                                    android:backgroundTint="@color/teal_700"
+                                    android:layout_marginStart="20dp"
+                                    />
+                                <Button
+                                    android:id="@+id/contacte"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="50dp"
+                                    android:text="Offre"
+                                    android:textSize="10dp"
+                                    android:backgroundTint="@color/white"
+                                    android:textColor="@color/black"
+                                    android:layout_marginStart="20dp"
+                                    />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="180dp"
+                    android:background="@drawable/roundedcomponent"
+                    android:orientation="vertical"
+                    android:layout_marginStart="25dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/user"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="10dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="rénover la cuisine"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:textColor="@color/white"
+                                android:textSize="20dp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rénover toute la cuisine"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="5dp"
+                                android:textColor="@color/white"
+                                />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="10dp">
+
+                                <Button
+                                    android:id="@+id/detail1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="50dp"
+                                    android:text="Details"
+                                    android:textSize="10dp"
+                                    android:backgroundTint="@color/teal_700"
+                                    android:layout_marginStart="20dp"
+                                    />
+                                <Button
+                                    android:id="@+id/contacte1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="50dp"
+                                    android:text="Offre"
+                                    android:textSize="10dp"
+                                    android:backgroundTint="@color/white"
+                                    android:textColor="@color/black"
+                                    android:layout_marginStart="20dp"
+                                    />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/demande"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Annonces"
+                android:layout_marginStart="20dp"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
